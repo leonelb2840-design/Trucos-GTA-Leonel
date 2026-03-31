@@ -1,117 +1,233 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3a0ca3">
+    
+    <link rel="icon" type="image/png" href="logo-icono.png">
+    <link rel="apple-touch-icon" href="logo-icono.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trucos GTA | LeonelB2840 OFFICIAL 2.0</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Trucos GTA Oficial | LeonelB</title>
+    <style>
+        :root {
+            --primary: #4cc9f0;
+            --secondary: #3a0ca3;
+            --accent: #ffd700;
+            --bg: #1a1a1a;
+            --card-bg: #2d2d2d;
+            --neon-vc: #ff00ff;
+            --gta-iii: #888888;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+
+        .highlight { color: var(--accent); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+
+        nav {
+            background: #000;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 5px 8px;
+            border: 1px solid var(--primary);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { background: var(--primary); color: #000; }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .vc-card { border-left-color: var(--neon-vc); }
+        .vc-card h2 { color: var(--neon-vc); }
+        .iii-card { border-left-color: var(--gta-iii); }
+        .iii-card h2 { color: var(--gta-iii); }
+
+        h2 { color: var(--primary); margin-top: 0; border-bottom: 1px solid #444; padding-bottom: 8px; font-size: 18px; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 12px; line-height: 1.3; border-bottom: 1px solid #3d3d3d; padding-bottom: 6px; }
+        strong { display: block; color: var(--accent); font-size: 13px; margin-bottom: 2px; }
+        code { background: #000; padding: 1px 4px; border-radius: 4px; font-family: monospace; color: #fff; font-size: 11px; border: 1px solid #444; }
+
+        footer { text-align: center; padding: 3rem; background: #111; margin-top: 50px; }
+        
+        /* Botón Secreto */
+        .secret-link {
+            color: #222 !important; /* Casi invisible contra el fondo */
+            text-decoration: none;
+            cursor: default;
+            transition: color 0.5s;
+        }
+        .secret-link:hover { color: var(--primary) !important; cursor: pointer; }
+
+        footer a { color: var(--primary); text-decoration: none; font-weight: bold; }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>TRUCOS <span class="highlight">GTA V</span></h1>
-        <p>Los mejores códigos para dominar Los Santos</p>
+        <h1>TRUCOS <span class="highlight">GTA OFICIAL</span></h1>
+        <p>Base de Datos Maestra por LeonelB</p>
     </header>
 
+    <nav>
+        <a href="#gtav">GTA V</a>
+        <a href="#gtaiv">GTA IV</a>
+        <a href="#gtasa">GTA SA</a>
+        <a href="#gtavc">VICE CITY</a>
+        <a href="#gtaiii">GTA III</a>
+        <a href="#stories">STORIES</a>
+    </nav>
+
     <main class="container">
-        <section class="card">
-            <h2>🚗 Vehículos Rápidos</h2>
+        <section class="card" id="gtav">
+            <h2>🎮 GTA V (PC/Consola)</h2>
             <ul>
-                <li><strong>Rapid GT:</strong> R2, L1, O, Derecha, L1, R1, Derecha, Izquierda, O, R2</li>
-                <li><strong>PCJ-600:</strong> R1, Derecha, Izquierda, Derecha, R2, Izquierda, Derecha, Cuadrado, Derecha, L2, L1, L1</li>
+                <li><strong>Invencibilidad:</strong> <code>PAINKILLER / DERECHA, X...</code></li>
+                <li><strong>Vida y Armadura:</strong> <code>TURTLE / O, L1, TRIÁNGULO...</code></li>
+                <li><strong>Bajar Búsqueda:</strong> <code>LAWYERUP / R1, R1, O...</code></li>
+                <li><strong>Súper Salto:</strong> <code>HOPTOIT / IZQ, IZQ, TRIÁNGULO...</code></li>
+                <li><strong>Balas Explosivas:</strong> <code>HIGHEX / DER, CUADRADO, X...</code></li>
+                <li><strong>Moto PCJ-600:</strong> <code>ROCKET / R1, DER, IZQ, DER...</code></li>
+                <li><strong>Helicóptero Buzzard:</strong> <code>BUZZOFF / O, O, L1, O, O...</code></li>
+                <li><strong>Paracaídas:</strong> <code>SKYDIVE / IZQ, DER, L1, L2...</code></li>
+                <li><strong>Correr Rápido:</strong> <code>CATCHME / TRIÁNGULO, IZQ, DER...</code></li>
+                <li><strong>Modo Borracho:</strong> <code>LIQUOR / TRIÁNGULO, DER, DER...</code></li>
             </ul>
         </section>
 
-        <section class="card">
-            <h2>🔫 Armas y Combate</h2>
+        <section class="card" id="gtaiv" style="border-left-color: #ff8000;">
+            <h2 style="color: #ff8000;">📞 GTA IV (Celular)</h2>
             <ul>
-                <li><strong>Balas Explosivas:</strong> Derecha, Cuadrado, X, Izquierda, R1, R2, Izquierda, Derecha, Derecha, L1, L1, L1</li>
-                <li><strong>Máximo de Salud y Armadura:</strong> O, L1, Triángulo, R2, X, Cuadrado, O, Derecha, Cuadrado, L1, L1, L1</li>
+                <li><strong>Vida y Armas:</strong> <code>482-555-0100</code></li>
+                <li><strong>Armadura y Munición:</strong> <code>362-555-0100</code></li>
+                <li><strong>Quitar Búsqueda:</strong> <code>267-555-0100</code></li>
+                <li><strong>Moto NRG-900:</strong> <code>625-555-0100</code></li>
+                <li><strong>Helicóptero:</strong> <code>359-555-0100</code></li>
+                <li><strong>Turismo (Carro):</strong> <code>227-555-0147</code></li>
+                <li><strong>Cambiar Clima:</strong> <code>468-555-0100</code></li>
+                <li><strong>Sánchez (Moto):</strong> <code>625-555-0150</code></li>
+                <li><strong>Comet (Carro):</strong> <code>227-555-0175</code></li>
+                <li><strong>Subir Búsqueda:</strong> <code>267-555-0150</code></li>
             </ul>
         </section>
 
-        <section class="card">
-            <h2>🌟 Mundo y Clima</h2>
+        <section class="card" id="gtasa">
+            <h2>🌴 GTA San Andreas (PC)</h2>
             <ul>
-                <li><strong>Cambiar Clima:</strong> R2, X, L1, L1, L2, L2, L2, Cuadrado</li>
-                <li><strong>Gravedad Lunar:</strong> Izquierda, Izquierda, L1, R1, L1, Derecha, Izquierda, L1, Izquierda</li>
+                <li><strong>Vida, Armadura y $250k:</strong> <code>HESOYAM</code></li>
+                <li><strong>Armas 1:</strong> <code>LXGIWYL</code></li>
+                <li><strong>Jetpack:</strong> <code>ROCKETMAN</code></li>
+                <li><strong>Tanque Rhino:</strong> <code>AIWPRTON</code></li>
+                <li><strong>Nunca Buscado:</strong> <code>AEZAKMI</code></li>
+                <li><strong>Munición Infinita:</strong> <code>FULLCLIP</code></li>
+                <li><strong>Súper Puñetazo:</strong> <code>IAVENJQ</code></li>
+                <li><strong>Coches Voladores:</strong> <code>CHITTYCHITTYBB</code></li>
+                <li><strong>Respeto al Máximo:</strong> <code>OGXSDAG</code></li>
+                <li><strong>Cero Tráfico:</strong> <code>THGLOJ</code></li>
+            </ul>
+        </section>
+
+        <section class="card vc-card" id="gtavc">
+            <h2>🌸 GTA Vice City (PC)</h2>
+            <ul>
+                <li><strong>Salud Completa:</strong> <code>ASPIRINE</code></li>
+                <li><strong>Armadura:</strong> <code>PRECIOUSPROTECTION</code></li>
+                <li><strong>Armas Pesadas:</strong> <code>NUTTERTOOLS</code></li>
+                <li><strong>Tanque Rhino:</strong> <code>PANZER</code></li>
+                <li><strong>Quitar Búsqueda:</strong> <code>LEAVEMEALONE</code></li>
+                <li><strong>Coches Voladores:</strong> <code>COMEFLYWITHME</code></li>
+                <li><strong>Conducir sobre Agua:</strong> <code>SEAWAYS</code></li>
+                <li><strong>Destruir Coches:</strong> <code>BIGBANG</code></li>
+                <li><strong>Mujeres con Armas:</strong> <code>CHICKSWITHGUNS</code></li>
+                <li><strong>Clima Soleado:</strong> <code>ALOVELYDAY</code></li>
+            </ul>
+        </section>
+
+        <section class="card iii-card" id="gtaiii">
+            <h2>🌃 GTA III (PC)</h2>
+            <ul>
+                <li><strong>Todas las Armas:</strong> <code>GUNSGUNSGUNS</code></li>
+                <li><strong>Vida al Máximo:</strong> <code>GESUNDHEIT</code></li>
+                <li><strong>Armadura:</strong> <code>TORTOISE</code></li>
+                <li><strong>Más Dinero:</strong> <code>IFIWEREARICHMAN</code></li>
+                <li><strong>Subir Búsqueda:</strong> <code>MOREPOLICEPLEASE</code></li>
+                <li><strong>Bajar Búsqueda:</strong> <code>NOPOLICEPLEASE</code></li>
+                <li><strong>Tanque:</strong> <code>GIVEUSATANK</code></li>
+                <li><strong>Coches Voladores:</strong> <code>CHITTYCHITTYBB</code></li>
+                <li><strong>Destruir Coches:</strong> <code>BANGBANGBANG</code></li>
+                <li><strong>Cambiar Skin:</strong> <code>ILIKEDRESSINGUP</code></li>
+            </ul>
+        </section>
+
+        <section class="card vc-card" id="stories">
+            <h2>🕹️ GTA Stories (VCS/LCS)</h2>
+            <ul>
+                <li><strong>VCS: Armadura:</strong> <code>ARR, ABA, IZQ, DER, CUAD...</code></li>
+                <li><strong>VCS: Armas 1:</strong> <code>IZQ, DER, X, ARR, ABA, CUAD...</code></li>
+                <li><strong>VCS: Dinero:</strong> <code>ARR, ABA, IZQ, DER, X, X, L1, R1</code></li>
+                <li><strong>LCS: Dinero:</strong> <code>L1, R1, TRI, L1, R1, O, L1, R1</code></li>
+                <li><strong>LCS: Armas 1:</strong> <code>L1, R1, CUAD, L1, R1, TRI, L1, R1</code></li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>Visita mi canal: <a href="#">LeonelB2840 OFFICIAL 2.0</a></p>
+        <p>Proyecto de <a href="https://youtube.com/@official-leonelb">LeonelB2840</a> | <a href="https://leonelb2840-design.github.io/Gamer-Hub/" class="secret-link">.</a></p>
+        <p style="font-size: 10px; color: #444;">&copy; 2026 Base de Datos Gamer.</p>
     </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                .then(reg => console.log('🎮 [GTA-TRUCOS]: Sistema Offline Activo'))
+                .catch(err => console.log('❌ Error en SW', err));
+            });
+        }
+    </script>
 </body>
 </html>
-<style>body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1a1a1a;
-    color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: linear-gradient(135deg, #3a0ca3, #4cc9f0);
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
-
-.highlight {
-    color: #ffd700;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 2rem auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 0 1rem;
-}
-
-.card {
-    background-color: #2d2d2d;
-    padding: 1.5rem;
-    border-radius: 10px;
-    border-left: 5px solid #4cc9f0;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-h2 {
-    color: #4cc9f0;
-    margin-top: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-strong {
-    display: block;
-    color: #ffd700;
-}
-
-footer {
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
-    color: #888;
-}
-
-footer a {
-    color: #4cc9f0;
-    text-decoration: none;
-}
-</style>
