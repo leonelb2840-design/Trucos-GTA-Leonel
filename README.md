@@ -25,5 +25,5 @@
 ├── manifest.json       # Configuración de instalación y colores
 ├── sw.js               # Service Worker para soporte Offline
 ├── logo-icono.png      # Icono oficial de la aplicación (Estilo Neón)
-├── style.css           # Estilos y personalización visual(esta dentro del código,por eso no se ve a simple vita)
+├── style.css           # Estilos y personalización visual(esta dentro del código,por eso no se ve a simple vista)
 └── README.md           # Documentación del proyecto
