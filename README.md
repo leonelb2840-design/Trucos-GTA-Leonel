@@ -5,19 +5,25 @@
 ---
 
 ## 🚀 Características
-* **Diseño Moderno:** Interfaz oscura (Dark Mode) optimizada para gamers.
+* **Experiencia PWA:** Instalable en tu dispositivo para acceso directo desde el inicio.
+* **Modo Offline:** Gracias al Service Worker, consulta tus trucos sin necesidad de internet.
+* **Diseño Moderno:** Interfaz oscura (Dark Mode) optimizada para gamers con estética neón.
 * **Totalmente Responsivo:** Se adapta perfectamente a móviles, tablets y PCs.
 * **Categorización Clara:** Trucos divididos por secciones (Vehículos, Armas, Mundo).
-* **Efectos Visuales:** Animaciones sutiles al pasar el cursor (Hover effects) para una mejor experiencia de usuario.
+* **Efectos Visuales:** Animaciones sutiles y estilos dorados inspirados en Rockstar.
 
 ## 🛠️ Tecnologías Utilizadas
-* **HTML5:** Estructura semántica del sitio.
-* **CSS3:** Estilos avanzados, Flexbox y CSS Grid para el diseño.
-* **Google Fonts:** Tipografías modernas para legibilidad.
+* **HTML5:** Estructura semántica y configuración de Progressive Web App.
+* **CSS3:** Estilos avanzados, Flexbox, CSS Grid y variables personalizadas.
+* **JavaScript:** Registro de Service Worker para funcionamiento fuera de línea.
+* **GitHub Pages:** Hosting oficial del proyecto.
 
 ## 📂 Estructura del Proyecto
 ```text
 /
-├── index.html    # Estructura principal del sitio
-├── style.css     # Estilos y personalización visual
-└── README.md     # Documentación del proyecto
+├── index.html          # Estructura principal y registro de SW
+├── manifest.json       # Configuración de instalación y colores
+├── sw.js               # Service Worker para soporte Offline
+├── logo-icono.png      # Icono oficial de la aplicación (Estilo Neón)
+├── style.css           # Estilos y personalización visual(esta dentro del código,por eso no se ve a simple vita)
+└── README.md           # Documentación del proyecto
